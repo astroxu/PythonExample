@@ -36,6 +36,7 @@ def main():
     udpSocket = socket(AF_INET, SOCK_DGRAM)
     udpSocket.bind(('', 4567))
 
+
     tr = Thread(target=recvData())
     ts = Thread(target=sendData())
 
